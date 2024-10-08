@@ -69,11 +69,28 @@ header {
 }
 
 .logo {
-  font-size: 2rem;
+  font-family: 'Monoton', cursive;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
+  color: #00aaff; 
+  background: linear-gradient(90deg, #00aaff, #00ffff, #0099ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 15px rgba(0, 150, 255, 0.7), 0 0 25px rgba(0, 150, 255, 0.5);
+  animation: shiny 3s infinite linear; 
+  margin-left: 10px;
 }
+
+@keyframes shiny {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 .dashboard {
   display: flex;
