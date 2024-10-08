@@ -60,14 +60,14 @@ export default function App() {
             case "about":
               return (
                 <div className="floating-content">
-                  <h2>What is H.A.M?</h2>
+                  <h2>What is DigiVault?</h2>
                   <p>
-                    H.A.M is a decentralized image sharing and uploading service designed to empower users with full control over their cherished memories. 
-                    Leveraging blockchain technology, H.A.M ensures that every photo you upload is stored in a secure, decentralized network, eliminating the 
+                    DigiVault is a decentralized image sharing and uploading service designed to empower users with full control over their cherished memories. 
+                    Leveraging blockchain technology, DigiVault ensures that every photo you upload is stored in a secure, decentralized network, eliminating the 
                     risks associated with centralized servers. Our platform allows users to upload, share, and store their images directly on the blockchain, 
-                    providing unmatched security, transparency, and immutability. By decentralizing image storage, H.A.M guarantees that your content remains 
-                    accessible, tamper-proof, and safeguarded against loss or censorship. Whether it's personal memories or valuable images, H.A.M provides 
-                    a future-proof solution to preserve and share your moments without relying on third-party services. At H.A.M, we believe that your 
+                    providing unmatched security, transparency, and immutability. By decentralizing image storage, DigiVault guarantees that your content remains 
+                    accessible, tamper-proof, and safeguarded against loss or censorship. Whether it's personal memories or valuable images, DigiVault provides 
+                    a future-proof solution to preserve and share your moments without relying on third-party services. At DigiVault, we believe that your 
                     memories belong to you, and through the power of decentralized technology, we're making sure they stay that way forever.
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function App() {
 
       <header>
         <div className="header-content">
-          <h1 className="logo">H.A.M</h1>
+          <h1 className="logo">DigiVault</h1>
           <nav className="dashboard">
             <button 
               className={`nav-button ${activeTab === "about" ? "active" : ""}`}
