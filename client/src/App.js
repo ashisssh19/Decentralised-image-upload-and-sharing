@@ -29,7 +29,7 @@ export default function App() {
         const signer = provider.getSigner();
         const address = await signer.getAddress();
         setAccount(address);
-        let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+        let contractAddress = "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318";
 
         const contract = new ethers.Contract(
           contractAddress,
@@ -59,17 +59,21 @@ export default function App() {
           switch (activeTab) {
             case "about":
               return (
-                <div className="floating-content">
-                  <h2>What is DigiVault?</h2>
-                  <p>
-                    DigiVault is a decentralized image sharing and uploading service designed to empower users with full control over their cherished memories. 
-                    Leveraging blockchain technology, DigiVault ensures that every photo you upload is stored in a secure, decentralized network, eliminating the 
-                    risks associated with centralized servers. Our platform allows users to upload, share, and store their images directly on the blockchain, 
-                    providing unmatched security, transparency, and immutability. By decentralizing image storage, DigiVault guarantees that your content remains 
-                    accessible, tamper-proof, and safeguarded against loss or censorship. Whether it's personal memories or valuable images, DigiVault provides 
-                    a future-proof solution to preserve and share your moments without relying on third-party services. At DigiVault, we believe that your 
-                    memories belong to you, and through the power of decentralized technology, we're making sure they stay that way forever.
-                  </p>
+                <div className="content-wrapper">
+                  <div className="floating-content">
+                    <div className="hover-content">
+                      <h2>What is DigiVault?</h2>
+                      <p>
+                        DigiVault is a decentralized image sharing and uploading service designed to empower users with full control over their cherished memories. 
+                        Leveraging blockchain technology, DigiVault ensures that every photo you upload is stored in a secure, decentralized network, eliminating the 
+                        risks associated with centralized servers. Our platform allows users to upload, share, and store their images directly on the blockchain, 
+                        providing unmatched security, transparency, and immutability. By decentralizing image storage, DigiVault guarantees that your content remains 
+                        accessible, tamper-proof, and safeguarded against loss or censorship. Whether it's personal memories or valuable images, DigiVault provides 
+                        a future-proof solution to preserve and share your moments without relying on third-party services. At DigiVault, we believe that your 
+                        memories belong to you, and through the power of decentralized technology, we're making sure they stay that way forever.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               );
             case "upload":
@@ -121,7 +125,7 @@ export default function App() {
               View Images
             </button>
             <button 
-              className="nav-button"
+              className="share"
               onClick={() => setModalOpen(true)}
             >
               Share
